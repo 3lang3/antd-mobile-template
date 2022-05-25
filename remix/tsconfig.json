@@ -1,0 +1,35 @@
+{
+  "include": [
+    "remix.env.d.ts",
+    "global.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2019"
+    ],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "target": "ES2019",
+    "strict": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./app/*"
+      ],
+      "antd-mobile": [
+        "node_modules/antd-mobile/bundle/antd-mobile.es.js"
+      ]
+    },
+    // Remix takes care of building everything in `remix build`.
+    "noEmit": true
+  }
+}
